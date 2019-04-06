@@ -1,0 +1,2 @@
+export default `vamtiger-social-media-button{border-radius:100%;padding:.75em;-webkit-box-sizing:border-box;box-sizing:border-box;background-color:#fff;-webkit-box-shadow:2px 2px 1px rgba(0,0,0,.2);box-shadow:2px 2px 1px rgba(0,0,0,.2)}vamtiger-social-media-button vamtiger-social-media-icon{width:100%;height:100%}
+/*# sourceMappingURL=document-index.ts.map */`;
