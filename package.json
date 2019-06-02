@@ -1,6 +1,6 @@
 {
     "name": "vamtiger-social-media-button",
-    "version": "0.3.1",
+    "version": "0.4.0",
     "description": "VAMTIGER Social Media Button",
     "main": "build/vamtiger-social-media-button.js",
     "scripts": {
