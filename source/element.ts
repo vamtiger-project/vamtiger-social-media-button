@@ -1,4 +1,3 @@
-import loadScript from '../node_modules/vamtiger-browser-method/source/load-script';
 import {
     Selector,
     ObservedAttribute,
@@ -13,6 +12,8 @@ import getTemplate from './get-template';
 import handleAttributeChange from './handle-attribute-changed';
 import loadIcon from './load-icon';
 
+const { VamtigerBrowserMethod } = window;
+const { loadScript } = VamtigerBrowserMethod;
 export const name = 'vamtiger-social-media-button';
 const {
     newline

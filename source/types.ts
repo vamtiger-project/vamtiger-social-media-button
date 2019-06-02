@@ -1,10 +1,14 @@
-import VamtigerSocialMediaIcon from '../node_modules/vamtiger-social-media-icon/source/element';
+import * as VBM from 'vamtiger-browser-method/build/types';
 import VamtigerSocialMediaButton from './element';
 
 export enum StringConstant {
     nothing = '',
     newline = '\n',
     comma = ','
+}
+
+export enum EventName {
+    buttonLoaded = 'buttonLoaded'
 }
 
 export enum Selector {
@@ -54,6 +58,7 @@ export interface IProperties {
 export interface IDataset extends DOMStringMap {
     twitter: SocialMediaIcon;
     color?: string;
+    loaded?: string;
 }
 
 export interface IHandleAttributeChanged {
@@ -81,11 +86,10 @@ export type GetTemplate<P extends IGetTemplate> =
     P['selector'] extends
         Selector.figure
         | Selector.figcaption
-            ? HTMLElement :
-    P['selector'] extends
-        Selector.twitterIcon
+        | Selector.twitterIcon
         | Selector.facebookIcon
-        | Selector.instagramIcon ? VamtigerSocialMediaIcon :
+        | Selector.instagramIcon
+            ? HTMLElement :
     P['selector'] extends
         Selector.facebookSvg
         | Selector.twitterSvg
